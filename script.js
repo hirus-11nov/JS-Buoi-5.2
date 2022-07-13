@@ -47,6 +47,6 @@ function ex2 () {
     }
 
     totalFee = invoiceProcessingFee + basicSerFee + premiumChanelFee;
-    console.log("Tổng tiền cáp là:", totalFee);
+    console.log("Tổng tiền cáp là:", new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalFee));
 }
 ex2();
